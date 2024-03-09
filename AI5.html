@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>인공지능 5 페이지</title>
+        <style>
+            @font-face {
+                font-family: '배달의민족 도현';
+                src : url(BMDOHYEON_ttf.ttf)
+            }
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: '배달의민족 도현', sans-serif;
+                src : url(BMDOHYEON_ttf.ttf);
+                scroll-behavior: smooth;
+            }
+            body {
+                min-height: 100vh;
+                background: linear-gradient(#2e9d71, #0f451e);
+            }
+            header {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                padding: 30px 100px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                z-index: 10000;
+            }
+            header .logo {
+                color: #fff;
+                font-weight: 700;
+                text-decoration: none;
+                font-size: 2em;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+            }
+            header ul {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            header ul li {
+                list-style: none;
+                margin-left: 20px;
+            }
+            header ul li a {
+                text-decoration: none;
+                padding: 6px 15px;
+                color: #fff;
+                border-radius: 20px;
+            }
+            header ul li a:hover , header ul li a.active{
+                background: #fff;
+                color: #2b1055;
+            }
+            section {
+                position: relative;
+                width: 100%;
+                height: 100vh;
+                padding: 100px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            section::before {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                height: 100px;
+                background: linear-gradient(to top, #2e9d71, transparent);
+                z-index: 1000;
+            }
+            section img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                pointer-events: none;
+            }
+            section img#mountain_sun {
+                mix-blend-mode: screen;
+            }
+            section img#mountain_behind {
+                z-index: 10;
+            }
+            #text {
+                position: absolute;
+                right: -350px;
+                color: #22e614;
+                text-shadow: 5px 5px 5px gray;
+                white-space: nowrap;
+                font-size: 7.5vw;
+                z-index: 9;
+            }
+            #btn {
+                text-decoration: none;
+                display: inline-block;
+                padding: 8px 30px;
+                border-radius: 40px;
+                background: #fff;
+                color: #2e9d71;
+                font-size: 1.5em;
+                z-index: 9;
+                transform: translateY(100px);
+            }
+            #btn:hover {
+                color: #2b1055;
+            }
+            .sec h2 {
+                font-size: 3.5em;
+                margin-bottom: 10px;
+                color: #fff;
+            }
+            .sec p {
+                font-size: 1em;
+                color: #fff;
+            }
+            .cursor {
+                position: fixed;
+                width: 50px;
+                height: 50px;
+                border: 1px solid #f1f1f1;
+                border-radius: 50%;
+                left: 0;
+                top: 0;
+                pointer-events: none;
+                transform: translate(-50%, -50%);
+                transition: .15s;
+            }
+            .cursor2 {
+                position: fixed;
+                width: 8px;
+                height: 8px;
+                background-color:#f1f1f1;
+                border-radius: 50%;
+                left: 0;
+                top: 0;
+                pointer-events: none;
+                transform: translate(-50%, -50%);
+                transition: .1s;
+            }
+            .content:hover ~ .cursor {
+                transform: translate(-50%, -50%) scale(0.5);
+                background-color: #f1f1f1;
+                opacity: .5;
+            }
+            .content:hover ~ .cursor2 {
+                opacity: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="content">
+        <header>
+            <a href="https://www.instagram.com/kim_rudals/" class="logo" target="_blank">KKM</a>
+            <ul>
+                <li><a href="index.html" target="_blank" class="active">Introduce</a></li>
+            </ul>
+        </header>
+        <section>
+            <img src="mountain_sun.png" id="mountain_sun">
+            <h2 id="text">5 Page</h2>
+            <a href="index.html" id="btn" target="_blank">Go to Introduce Page</a>
+            <img src="mountain_background_left.png" id="mountain_background_left">
+            <img src="mountain_background_right.png" id="mountain_background_right">
+        </section>
+        <div class="sec">
+            <h2><font color="black">A</font>rtificial <font color="black">I</font>ntelligence</h2>
+            <p>
+                <font size="6px" color="yellow">알고리즘이란?</font><br>
+                &gt;&gt;&gt; 특정한 일이나 문제를 해결하기 위하여 수행하는 해결 과정 혹은 방법을 의미한다. 특정한 일을 수행하며 문제를 해결해 간다는 점에서 프로그램과 동일하나, 
+                알고리즘은 문제를 풀어가는 과정이 유한한 명령어들의 집합으로 해결하고, 프로그램은 유한성이 만족되지 않아도 된다는 점에서 구별된다. 즉, 알고리즘은 특정한 일이나 문제를
+                해결하기 위하여 만든 명령어들의 유한 집합(Finite Set)이라고 할 수 있다.
+            </p>
+            <p>
+                <font size="6px" color="yellow">알고리즘 조건</font><br>
+                <ul>
+                    <li><font color="white">입출력(I/O) : 입력에 따른 결과를 출력한다.</font></li>
+                    <li><font color="white">명확성(Clarity) : 각 명령어는 명확한 의미를 가진다.</font></li>
+                    <li><font color="white">유한성(Endlichkeit) : 알고리즘은 반드시 수행 후 종료된다.</font></li>
+                    <li><font color="white">유효성(Availability) : 실행되는 모든 명령어는 오류 없이 실행할 수 있어야 한다.</font></li>
+                    <li><font color="white">효율성(Efficiency) : 입력값에 따라 효율적으로 수행되어야 한다.</font></li>
+                </ul>
+            </p>
+            <p>
+                <font size="6px" color="yellow">알고리즘 선택 기준</font><br>
+                <ul>
+                    <li><font color="white">정확성(Accuracy) : 입력에 따른 결과가 정확한지의 여부이다.</font></li>
+                    <li><font color="white">효율성(Efficiency) : 시간복잡도 및 공간복잡도가 효율적인지의 여부이다.</font></li>
+                    <li><font color="white">적정성(Appropriateness) : 하드웨어 혹은 소프트웨어에서 해당 알고리즘이 적정한지의 여부이다.</font></li>
+                </ul>
+            </p>
+            <p>
+                <font size="6px" color="yellow">알고리즘 유형</font><br>
+                <ul>
+                    <li><font color="white">탐욕법(Greedy Method) : 해당 단계에서 최선을 선택하여 결국 최적의 해를 구하는 기법으로, 크루스칼, 다익스트라, 허프만 코딩 등이 있다.</font></li>
+                    <li><font color="white">분할과 정복(Divde and Conquer) : 작은 부분으로 분할하여 해를 구하고, 병합해가는 기법으로, 퀵 정렬, 병합 정렬 등이 있다.</font></li>
+                    <li><font color="white">동적 계획법(Dynamic Programming) : 큰 하나의 문제 해결이 어려운 경우 작게 나누어 풀어 해당 문제의 값을 저장하여 재사용하는 기법으로, 피보나치 수가 대표적이다.</font></li>
+                    <li><font color="white">백 트래킹(Back Tracking) : 여러 후보 해 중 특정 조건을 충족하는 모든 해를 구하기 위해 이전으로 돌아가며 해를 찾는 기법으로, N-Queen 알고리즘이 대표적이다.</font></li>
+                </ul>
+            </p>
+            <p>
+                <font size="6px" color="yellow">알고리즘 복잡도</font><br>
+                <ul>
+                    <li><font color="white">시간 복잡도(Time Complexity) : 입력 값에 대하여 얼마만큼의 연산을 수행하는지 계산하여 알고리즘의 수행시간을 평가하는 척도이다.</font></li>
+                    <li><font color="white">공간 복잡도(Space Complexity) : 알고리즘을 수행할 때 메모리가 얼마만큼 필요한지에 대하여 평가하는 척도이다.</font></li>
+                </ul>
+            </p>
+            <br><br><br><br><br><br><br><br><br><br>
+        </div></div>
+        <div class="cursor"></div>
+        <div class="cursor2"></div>
+        <script>
+            let mountain_sun = document.getElementById('mountain_sun');
+            let mountain_background_left = document.getElementById('mountain_background_left');
+            let mountain_background_right = document.getElementById('mountain_background_right');
+            let text = document.getElementById('text');
+            let btn = document.getElementById('btn');
+            let header = document.querySelector('header');
+
+            window.addEventListener('scroll', function(){
+                let value = window.scrollY;
+                mountain_sun.style.top = value * 1.05 + 'px';
+                mountain_sun.style.left = value * -1.05 + 'px';
+                mountain_background_left.style.left = value * -0.55 + 'px';
+                mountain_background_right.style.left = value * 0.55 + 'px';
+                text.style.marginRight = value * 4 + 'px';
+                text.style.marginTop = value * 1.5 + 'px';
+                btn.style.marginTop = value * 2.5 + 'px';
+                header.style.top = value * 0.5 + 'px';
+            });
+        </script>
+        <script>
+            var cursor = document.querySelector(".cursor");
+            var cursor2 = document.querySelector(".cursor2");
+            document.addEventListener("mousemove", function(e){
+                cursor.style.cssText = cursor2.style.cssText = "left: " + e.clientX
+                + "px; top: " + e.clientY + "px;";
+            })
+        </script>
+    </body>
+</html>

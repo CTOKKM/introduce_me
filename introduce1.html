@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>인생 연대기</title>
+        <style>
+            @font-face {
+                font-family: '배달의민족 도현';
+                src : url(BMDOHYEON_ttf.ttf)
+            }
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: '배달의민족 도현', sans-serif;
+            }
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: top;
+                min-height: 100vh;
+                background: #252839;
+                overflow-y: hidden;
+            }
+            h2 {
+                position: absolute;
+                font-size: 60px;
+                color: #252839;
+                -webkit-text-stroke: 0.3vw #383d52;
+                line-height: 3;
+            }
+            h2::before {
+                content: attr(data-text);
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 0;
+                height: 100%;
+                color: #01fe87;
+                -webkit-text-stroke: 0vw #383d52;
+                border-right: 2px solid #01fe87;
+                overflow: hidden;
+                animation: animate 5s linear infinite; 
+            }
+            @keyframes animate {
+                0%, 10%, 100% {
+                    width: 0;
+                }
+                70%, 90% {
+                    width: 100%;
+                }
+            }
+            p {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 20vh;
+            }
+            li {
+                font-size: 21px;
+                line-height: 1.35;
+            }
+        </style>
+    </head>
+    <body text="#FFFFCC" link="#FF3333" alink="yellow" vlink="#FF3333">
+        <h2 data-text="Chronicle...">Chronicle...</h2>
+        <div>
+            <p>
+                <ul>
+                    <li>&lt;2001년&gt; 출생</li>
+                    <li>&lt;2007년&gt; 아이스하키 시작</li>
+                    <li>&lt;2008년&gt; 제암초등학교 입학</li>
+                    <li>&lt;2010년&gt; 행정초등학교 전학</li>
+                    <li>&lt;2012년&gt; U12 아이스하키 국가대표 선발</li>
+                    <li>&lt;2014년&gt; 행정초등학교 졸업</li>
+                    <li>&lt;2014년&gt; 분당중학교 <q>아이스하키부</q> 입학</li>
+                    <li>&lt;2014년&gt; 중학교 첫 대회에서 쇄골 골절</li>
+                    <li>&lt;2016년&gt; 분당중학교 아이스하키부 주장</li>
+                    <li>&lt;2016년&gt; 왼쪽 견갑골 골절</li>
+                    <li>&lt;2016년&gt; 중동고등학교와의 연습경기에서 <a href="bodycheck.gif" target="_top">바디체크</a>로 인해 뇌진탕</li>
+                    <li>&lt;2016년&gt; 중동중학교 전학</li>
+                    <li>&lt;2017년&gt; 중동중학교 졸업</li>
+                    <li>&lt;2017년&gt; 중동고등학교 입학</li>
+                    <li>&lt;2017년&gt; 10년 아이스하키 여정의 끝</li>
+                    <li>&lt;2017년&gt; 호매실고등학교 전학</li>
+                    <li>&lt;2020년&gt; 호매실고등학교 졸업</li>
+                    <li>&lt;2020년&gt; 건국대학교 글로컬캠퍼스 20학번 입학</li>
+                    <li>&lt;2020년&gt; COVID-19으로 인해 1학기 수료 후 군 입대</li>
+                    <li>&lt;2021년&gt; 군대에서 오른쪽 발목 삼복사 골절 및 수술</li>
+                    <li>&lt;2022년&gt; 육군 병장 만기전역</li>
+                    <li>&lt;2022년&gt; 2022학년도 1학년 2학기 복학</li>
+                    <li>&lt;2023년&gt; KT창의혁신리더 전액장학생 발탁...
+                        <a href="https://www.eroun.net/news/articleView.html?idxno=34427" target="_blank">(1)</a>
+                        <a href="https://www.koit.co.kr/news/articleView.html?idxno=117441" target="_blank">(2)</a>
+                    <li>&lt;2023년&gt; 편입 준비 시작</li>
+                    <li>&lt;2024년&gt; 한성대학교 편입학</li>
+                </ul>
+            </p>
+        </div>
+    </body>
+</html>

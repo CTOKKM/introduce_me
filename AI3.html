@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>인공지능 3 페이지</title>
+        <style>
+            @font-face {
+                font-family: '배달의민족 도현';
+                src : url(BMDOHYEON_ttf.ttf)
+            }
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: '배달의민족 도현', sans-serif;
+                src : url(BMDOHYEON_ttf.ttf);
+                scroll-behavior: smooth;
+            }
+            body {
+                min-height: 100vh;
+                background: linear-gradient(#2e9d71, #0f451e);
+            }
+            header {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                padding: 30px 100px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                z-index: 10000;
+            }
+            header .logo {
+                color: #fff;
+                font-weight: 700;
+                text-decoration: none;
+                font-size: 2em;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+            }
+            header ul {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            header ul li {
+                list-style: none;
+                margin-left: 20px;
+            }
+            header ul li a {
+                text-decoration: none;
+                padding: 6px 15px;
+                color: #fff;
+                border-radius: 20px;
+            }
+            header ul li a:hover , header ul li a.active{
+                background: #fff;
+                color: #2b1055;
+            }
+            section {
+                position: relative;
+                width: 100%;
+                height: 100vh;
+                padding: 100px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            section::before {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                height: 100px;
+                background: linear-gradient(to top, #2e9d71, transparent);
+                z-index: 1000;
+            }
+            section img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                pointer-events: none;
+            }
+            section img#mountain_sun {
+                mix-blend-mode: screen;
+            }
+            section img#mountain_behind {
+                z-index: 10;
+            }
+            #text {
+                position: absolute;
+                right: -350px;
+                color: #22e614;
+                text-shadow: 5px 5px 5px gray;
+                white-space: nowrap;
+                font-size: 7.5vw;
+                z-index: 9;
+            }
+            #btn {
+                text-decoration: none;
+                display: inline-block;
+                padding: 8px 30px;
+                border-radius: 40px;
+                background: #fff;
+                color: #2e9d71;
+                font-size: 1.5em;
+                z-index: 9;
+                transform: translateY(100px);
+            }
+            #btn:hover {
+                color: #2b1055;
+            }
+            .sec h2 {
+                font-size: 3.5em;
+                margin-bottom: 10px;
+                color: #fff;
+            }
+            .sec p {
+                font-size: 1em;
+                color: #fff;
+            }
+            .cursor {
+                position: fixed;
+                width: 50px;
+                height: 50px;
+                border: 1px solid #f1f1f1;
+                border-radius: 50%;
+                left: 0;
+                top: 0;
+                pointer-events: none;
+                transform: translate(-50%, -50%);
+                transition: .15s;
+            }
+            .cursor2 {
+                position: fixed;
+                width: 8px;
+                height: 8px;
+                background-color:#f1f1f1;
+                border-radius: 50%;
+                left: 0;
+                top: 0;
+                pointer-events: none;
+                transform: translate(-50%, -50%);
+                transition: .1s;
+            }
+            .content:hover ~ .cursor {
+                transform: translate(-50%, -50%) scale(0.5);
+                background-color: #f1f1f1;
+                opacity: .5;
+            }
+            .content:hover ~ .cursor2 {
+                opacity: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="content">
+        <header>
+            <a href="https://www.instagram.com/kim_rudals/" class="logo" target="_blank">KKM</a>
+            <ul>
+                <li><a href="index.html" target="_blank" class="active">Introduce</a></li>
+            </ul>
+        </header>
+        <section>
+            <img src="mountain_sun.png" id="mountain_sun">
+            <h2 id="text">3 Page</h2>
+            <a href="AI4.html" id="btn">Next</a>
+            <img src="mountain_background_left.png" id="mountain_background_left">
+            <img src="mountain_background_right.png" id="mountain_background_right">
+        </section>
+        <div class="sec">
+            <h2><font color="black">A</font>rtificial <font color="black">I</font>ntelligence</h2>
+            <p>
+                <font size="6px" color="yellow">왜 기계학습(Machine Learning)이 최근에 주목을 받는가?</font><br>
+                <img src="AI80.jpeg" width="100" align="left" border="1" bordercolor="white">
+                &gt;&gt;&gt; 기계학습의 역사는 50년대 이후부터 시작되어 오래되었지만 80~90년대까지 발전 후 답보상태를 이루다가 2000년대 중반에 들어와서 현저한 발전이 이루어졌다. 기계학습의 하나의 기술인
+                인공 신경망 분야에서 두드러진 발전이 이루어졌는데 바로 딥러닝(Deep Learning)이 탄생한 것이다.<br><br>
+                사물인터넷이 활성화되면 가장 두드러지는 현상은 엄청난 데이터가 발생하게 된다. 이 빅데이터를 이용하여 학습할 데이터들을 사전 처리하여 최적화함으로써 학습효과를
+                극대화하면 실용화가 가능한 기계학습 결과가 나오는 것이다.
+            </p><br clear="left">
+            <p>
+                <font size="6px" color="yellow">기계학습의 르네상스를 오게 한 딥러닝</font><br>
+                <img src="AI81.jpeg" width="250" align="right" border="1" bordercolor="white">
+                &gt;&gt;&gt; 딥러닝은 인공신경망에 기반을 둔 기계학습 기술의 한 종류로 최근 몇 년간 비약적인 발전을 이루고 있다. 개념적으로 딥러닝의 인공신경망은 새로운 것이 아니다.<br><br>
+                다층 구조로 설계하여 깊어진 인공신경망이 학습이 잘 이루어지지 않는 전통적인 문제를, 학습을 위한 데이터들을 비지도 학습을 통해 전처리하면 신경망이 깊어져도 학습이 잘된다는 것을 발견하였을 뿐이다.<br><br>
+                인터넷에 의해 축적된 방대한 양의 데이터에서 오는 빅데이터와 이를 처리하기 위한 컴퓨팅 능력의 향상의 두 가지 요소가 없으면 이루어질 수 없는 발견이다.<br><br><br><br>
+            </p>
+            <p>
+                <font size="6px" color="yellow">기계학습에 세상은 어떻게 대응하고 있나</font><br>
+                <img src="AI82.jpeg" width="300" align="left" border="1" bordercolor="white">
+                &gt;&gt;&gt; 딥러닝을 통한 기계학습의 큰 성공은 많은 기업의 경쟁을 유발하고 있다. 2014년 초에 구글은 3년밖에 되지 않은 딥마인드(Deep Mind)라는 회사를 4억 달러가 넘는 금액으로 인수하였다. 
+                가트너는 2014년 주목할 만한 기술분야 중 하나로 딥러닝을 꼽았다. 이미지 인식, 음성 인식, 번역 등의 분야에서 현저한 성과가 이루어지고 있다. 이미지 인식 분야는 단순하게 물체 종류를 알아맞히는 것을 넘어 이미지 전체를 설명하는
+                문장까지도 생성하는 수준에 도달했다.
+            </p>
+            <br><br><br><br><br><br><br><br><br><br>
+        </div></div>
+        <div class="cursor"></div>
+        <div class="cursor2"></div>
+        <script>
+            let mountain_sun = document.getElementById('mountain_sun');
+            let mountain_background_left = document.getElementById('mountain_background_left');
+            let mountain_background_right = document.getElementById('mountain_background_right');
+            let text = document.getElementById('text');
+            let btn = document.getElementById('btn');
+            let header = document.querySelector('header');
+
+            window.addEventListener('scroll', function(){
+                let value = window.scrollY;
+                mountain_sun.style.top = value * 1.05 + 'px';
+                mountain_sun.style.left = value * -1.05 + 'px';
+                mountain_background_left.style.left = value * -0.55 + 'px';
+                mountain_background_right.style.left = value * 0.55 + 'px';
+                text.style.marginRight = value * 4 + 'px';
+                text.style.marginTop = value * 1.5 + 'px';
+                btn.style.marginTop = value * 2.5 + 'px';
+                header.style.top = value * 0.5 + 'px';
+            });
+        </script>
+        <script>
+            var cursor = document.querySelector(".cursor");
+            var cursor2 = document.querySelector(".cursor2");
+            document.addEventListener("mousemove", function(e){
+                cursor.style.cssText = cursor2.style.cssText = "left: " + e.clientX
+                + "px; top: " + e.clientY + "px;";
+            })
+        </script>
+    </body>
+</html>

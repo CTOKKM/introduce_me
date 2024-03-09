@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>자기소개서 페이지</title>
+        <style>
+            @font-face {
+                font-family: '배달의민족 도현';
+                src : url(BMDOHYEON_ttf.ttf)
+            }
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: '배달의민족 도현', sans-serif;
+            }
+            body {
+                min-height: 100vh;
+                background: #0c192c;
+            }
+            .container {
+                position: relative;
+                width: 100%;
+                height: 100vh;
+                overflow: hidden;
+            }
+            .bubbles {
+                position: relative;
+                display: flex;
+            }
+            .bubbles span {
+                position: relative;
+                width: 30px;
+                height: 30px;
+                background: #4fc3dc;
+                margin: 0 4px;
+                border-radius: 50%;
+                box-shadow: 0 0 0 10px #4fc3dc44,
+                0 0 50px #4fc3dc,
+                0 0 100px #4fc3dc;
+                animation: animate 15s linear infinite;
+                animation-duration: calc(125s / var(--i));
+            }
+            .bubbles span:nth-child(even) {
+                background: #ff2d75;
+                box-shadow: 0 0 0 10px #ff2d7544,
+                0 0 50px #ff2d75,
+                0 0 100px #ff2d75;
+
+            }
+            @keyframes animate {
+                0% {
+                    transform: translateY(100vh) scale(0);
+                }
+                100% {
+                    transform: translateY(-10vh) scale(1);
+                }
+            }
+            .text {
+                text-shadow: 5px 5px 5px gray;
+                color: white;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-size: 32px;
+            }
+            .content {
+                color: white;
+                position: absolute;
+                top: 50px;
+                left: 50%;
+                transform: translateX(-50%);
+                font-size: 18px;
+                text-align: center;
+                line-height: 30px;
+                width: 90%;
+            }
+            .content-center {
+                text-align: center;
+                text-shadow: 5px 5px 5px gray;
+                font-size: 50px;
+            }
+            .content-right {
+                text-align: right;
+            }
+            .content-left {
+                text-align: left;
+            }
+            .content a {
+                color: white;
+                text-decoration: underline;
+            }
+            .content a:hover {
+                color: #ff2d75;
+            }
+            hr {
+                margin: 20px 0;
+            }
+            .cursor {
+                position: fixed;
+                width: 50px;
+                height: 50px;
+                border: 1px solid #f1f1f1;
+                border-radius: 50%;
+                left: 0;
+                top: 0;
+                pointer-events: none;
+                transform: translate(-50%, -50%);
+                transition: .15s;
+            }
+            .cursor2 {
+                position: fixed;
+                width: 8px;
+                height: 8px;
+                background-color:#f1f1f1;
+                border-radius: 50%;
+                left: 0;
+                top: 0;
+                pointer-events: none;
+                transform: translate(-50%, -50%);
+                transition: .1s;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="bubbles">
+                <span style="--i:11;"></span>
+                <span style="--i:12;"></span>
+                <span style="--i:24;"></span>
+                <span style="--i:14;"></span>
+                <span style="--i:18;"></span>
+                <span style="--i:16;"></span>
+                <span style="--i:19;"></span>
+                <span style="--i:20;"></span>
+                <span style="--i:22;"></span>
+                <span style="--i:25;"></span>
+                <span style="--i:18;"></span>
+                <span style="--i:21;"></span>
+                <span style="--i:15;"></span>
+                <span style="--i:13;"></span>
+                <span style="--i:26;"></span>
+                <span style="--i:17;"></span>
+                <span style="--i:13;"></span>
+                <span style="--i:28;"></span>
+                <span style="--i:11;"></span>
+                <span style="--i:12;"></span>
+                <span style="--i:24;"></span>
+                <span style="--i:14;"></span>
+                <span style="--i:18;"></span>
+                <span style="--i:16;"></span>
+                <span style="--i:19;"></span>
+                <span style="--i:20;"></span>
+                <span style="--i:22;"></span>
+                <span style="--i:25;"></span>
+                <span style="--i:18;"></span>
+                <span style="--i:21;"></span>
+                <span style="--i:15;"></span>
+                <span style="--i:13;"></span>
+                <span style="--i:26;"></span>
+                <span style="--i:17;"></span>
+                <span style="--i:13;"></span>
+                <span style="--i:28;"></span>
+                <span style="--i:11;"></span>
+                <span style="--i:12;"></span>
+                <span style="--i:24;"></span>
+                <span style="--i:14;"></span>
+                <span style="--i:18;"></span>
+                <span style="--i:16;"></span>
+                <span style="--i:19;"></span>
+                <span style="--i:20;"></span>
+                <span style="--i:22;"></span>
+                <span style="--i:25;"></span>
+                <span style="--i:18;"></span>
+                <span style="--i:21;"></span>
+                <span style="--i:15;"></span>
+                <span style="--i:13;"></span>
+                <span style="--i:26;"></span>
+                <span style="--i:17;"></span>
+                <span style="--i:13;"></span>
+                <span style="--i:28;"></span>
+                <span style="--i:11;"></span>
+                <span style="--i:12;"></span>
+                <span style="--i:24;"></span>
+                <span style="--i:14;"></span>
+                <span style="--i:18;"></span>
+                <span style="--i:16;"></span>
+                <span style="--i:19;"></span>
+                <span style="--i:20;"></span>
+                <span style="--i:22;"></span>
+                <span style="--i:25;"></span>
+                <span style="--i:18;"></span>
+                <span style="--i:21;"></span>
+                <span style="--i:15;"></span>
+                <span style="--i:13;"></span>
+                <span style="--i:26;"></span>
+                <span style="--i:17;"></span>
+                <span style="--i:13;"></span>
+                <span style="--i:28;"></span>
+            </div>
+        </div>
+        <div class="content">
+            <div class="content-center">간단 자기 소개서</div>
+            <hr>
+            <div class="content-right">
+                이름 : 김경민<br>
+                <br>
+                <br>
+            </div>
+            <div class="content-left">
+                거주지 : <a href="https://www.suwon.go.kr/index.do" target="_blank">경기도 수원특례시</a><br>
+                특기 : <a href="icehockey.html" target="_blank">아이스하키</a><br>
+                취미 : 사진 촬영, 운동, 여행, 음악감상, 게임<br>
+                자격증 : 1종보통운전면허증, <a href="Excel_page-0001.jpg" target="_blank">MOS Excel</a>, <a href="PPt_page-0001.jpg" target="_blank">MOS PowerPoint</a><br>
+                MBTI : ENFJ (선도자는 삶에서 위대한 사명을 위해 힘써야 한다는 느낌을 받곤 합니다. 사려 깊고 이상주의적 성향을 지닌 선도자는 다른 사람과 주변 세상에 긍정적인 영향력을 발휘하기 위해 최선을 다하며, 어려운 상황에서도 올바른 일을 할 기회를 마다하지 않습니다.)
+            </div>
+        </div>
+        
+        <div class="cursor"></div>
+        <div class="cursor2"></div>
+
+        <script>
+            var cursor = document.querySelector(".cursor");
+            var cursor2 = document.querySelector(".cursor2");
+            document.addEventListener("mousemove", function(e){
+                cursor.style.cssText = cursor2.style.cssText = "left: " + e.clientX
+                + "px; top: " + e.clientY + "px;";
+            });
+        </script>
+    </body>
+</html>
